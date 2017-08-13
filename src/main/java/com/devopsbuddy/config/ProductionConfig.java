@@ -16,7 +16,7 @@ import com.devopsbuddy.backend.service.SmtpEmailService;
  */
 @Configuration
 @Profile("prod")
-@PropertySource("file:///${user.home}/.devopsbuddy/application-prod.properties")
+@PropertySource("file:///${user.home}/devopsbuddy/application-prod.properties")
 public class ProductionConfig {
 
     @Value("${stripe.prod.private.key}")

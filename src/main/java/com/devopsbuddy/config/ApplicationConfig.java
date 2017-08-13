@@ -23,8 +23,8 @@ import com.amazonaws.services.s3.AmazonS3Client;
 @EnableJpaRepositories(basePackages = "com.devopsbuddy.backend.persistence.repositories")
 @EntityScan(basePackages = "com.devopsbuddy.backend.persistence.domain.backend")
 @EnableTransactionManagement
-@PropertySource("file:///${user.home}/.devopsbuddy/application-common.properties")
-@PropertySource("file:///${user.home}/.devopsbuddy/stripe.properties")
+@PropertySource("file:///${user.home}/devopsbuddy/application-common.properties")
+@PropertySource("file:///${user.home}/devopsbuddy/stripe.properties")
 public class ApplicationConfig {
 
     @Value("${aws.s3.profile}")

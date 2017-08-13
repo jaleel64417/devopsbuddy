@@ -18,7 +18,7 @@ import com.devopsbuddy.backend.service.MockEmailService;
  */
 @Configuration
 @Profile("dev")
-@PropertySource("file:///${user.home}/.devopsbuddy/application-dev.properties")
+@PropertySource("file:///${user.home}/devopsbuddy/application-dev.properties")
 public class DevelopmentConfig {
 
     @Value("${stripe.test.private.key}")
